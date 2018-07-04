@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Simple Survey Form</title>
+  </head>
+  <body>
+    <div class="container" id="surveywrapper">
+        <h1 id="title">Give us a few details so we can personalize your experience!</h1>
+    <!--Naming-->
+
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <i class="far fa-address-card icon"></i>
+              <div class="col-md-5 mb-5">
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" value="" required>
+              </div>
+              <div class="col-md-6 mb-5">
+                <input type="text" class="form-control" id="lastName" placeholder="Second Name" value="" required>
+              </div>
+            </div>
+            <!--Email-->
+            <div class="form-row">
+              <i class="far fa-envelope icon"></i>
+              <div class="col-md-11 mb-5">
+                <input type="email" class="form-control" id="email" placeholder="example@example.com">
+              </div>
+            </div>
+            <div class="form-row personal">
+              <i class="fas fa-birthday-cake icon"></i>
+              <div class="col-md-2 mb-5">
+                <input type="number" class="form-control" id="age" placeholder="Age">
+              </div>
+                              <i class="far fa-user icon"></i>
+              <div class="col-md-2 mb-5">
+                <select name="gender" class="form-control" id="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="No Answer">Prefer not to answer</option>
+                </select>
+              </div>
+                              <i class="fas fa-child icon"></i>
+              <div class="col-md-5 mb-5">
+                <select name="children" class="form-control" id="children" placeholder="Have children?">
+                  <option selected>Have Children?</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+
+            </div>
+            <div class="form-row">
+              <i class="fas fa-thumbtack icon"></i>
+              <div class="col-md-4 mb-5">
+                <input type="number" placeholder="Postal code" class="form-control" id="zipCode">
+              </div>
+              <i class="fas fa-money-bill-wave icon"></i>
+              <div class="col-md-6 mb-5">
+                <select name="budget" class="form-control" id="budget">
+                  <option value="frugal">$500-$1200</option>
+                  <option value="simple">$1200-$1800</option>
+                  <option value="midLevel">$1800-$2600</option>
+                  <option value="comfy">$2600-$3800</option>
+                  <option value="ballin">$3800 +</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-check">
+                  <input type="checkbox" class="form-checkinput" id="TermsCondition">
+                I agree to the <a href="#">Terms and Conditions</a>
+              </div>
+            </div>
+              <div class="col-md-6">
+                <button class="mr-auto btn btn-lg btn-custom btn-outline-secondary">
+                  Submit
+                </button>
+              </div>
+            </div>
+    </div>
+
+    <!--Big
+    <div class="container" id="headingTop">
+      <h1 id="title">Hello, world!</h1>
+    </div>-->
+    <!--Comment
+    <section id="form" class="container">
+      <div id="form-outer">
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <form action="" id="survey-form" method="GET">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="name">Name:
+              <input type="text" required class="form-control" id="name-label" placeholder="Enter your name">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 mb-3">
+            <!--validation error
+            <label for="name">Email:
+            <input type="email" required class="form-control" id="email-label" placeholder="Enter your email">
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 mb-3">
+          <label for="age">Age:
+            <input type="number" required class="form-control" id="number-label"placeholder="Age Please">
+          </label>
+        </div>
+      </div>
+
+      <!--dropdown-
+      <div class="row">
+        <label for="Status">Maritial Status:
+        <select name="status" id="dropdown" class="dropdown">
+          <option value="single"></option>
+          <option value="single"></option>
+          <option value="single"></option>
+        </select>
+        </label>
+      </div>
+      <div class="row">
+        <label for="homeType">
+          What type of home are you looking for?</label>
+          <ul>
+            <li class="radio">
+              <label>House
+              <input type="radio" name="radio-buttons" value="1" class="homeType"></label>
+            </li>
+            <li class="radio">
+              <label>Townhouse
+              <input type="radio" name="radio-buttons" value="2" class="homeType"></label>
+            </li>
+            <li class="radio">
+              <label>Apartment
+              <input type="radio" name="radio-buttons" value="3" class="homeType"></label>
+            </li>
+            <li class="radio">
+              <label>Condo
+              <input type="radio" name="radio-buttons" value="4" class="homeType"></label>
+            </li>
+
+          </ul>
+      </div>
+      <div class="row">
+        <label for="comments">Comments:</label>
+        <textarea name="name" rows="8" cols="80"></textarea>
+
+      </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
