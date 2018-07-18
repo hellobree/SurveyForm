@@ -1,0 +1,82 @@
+body{
+  background-color: #9E788F;
+}
+
+#surveywrapper{
+  background-color: #fff;
+  border: 1px solid #fff;
+  padding: 50px;
+  border-radius: 5px;
+  height: 100%;
+  margin: 75px auto;
+
+form{
+  margin-top: 50px;
+}
+h1{
+  color: #000;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.icon{
+  font-size: 40px;
+  display: block;
+  position: relative;
+  padding-right: 5px;
+  margin-right: 5px;
+  color: #CDD5D1;
+  opacity: .8;
+}
+#email{
+  margin-left: 5px;
+}
+
+#age{
+  margin-left: 10px;
+}
+.personal .fa-user.icon{
+  margin-left: 15px;
+  margin-right: 0;
+}
+.personal .fa-child.icon{
+  margin-left: 10px;
+}
+#children{
+  width: 400px;
+}
+
+.fa-thumbtack.icon{
+  margin-right: 20px;
+}
+#zipcode{
+  margin-right: 5px;
+}
+.fa-money-bill-wave.icon{
+  margin-left: 18px;
+  margin-right: 0;
+}
+}
+button.btn-custom{
+  color: #CDD5D1;
+  border: 2px solid #CDD5D1;
+  padding: 8px 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+  position:relative;
+  left: 247px;
+
+  &:hover{
+    border: 2px solid #9E788F;
+    background-color: #9E788F;
+    color: #fff;
+  }
+}
+.form-control{
+  &:focus{
+    background-color: #fff;
+    border-color: transparent;
+    box-shadow: 0 0 0 0.2rem rgba(158,120,143,.25)
+  }
+}
